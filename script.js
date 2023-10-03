@@ -1,4 +1,4 @@
-class Personas {
+class Persona {
     #nombre = "def nombre";
     #edad = "def edad";
 
@@ -16,7 +16,7 @@ class Personas {
     }
 }
 
-class Perros {
+class Perro {
     #nombre = "def nombre";
     #color = "def color";
 
@@ -34,10 +34,10 @@ class Perros {
     }
 }
 
-const a = new Personas();
-const b = new Personas();
-const c = new Perros();
-const d = new Perros();
+const a = new Persona();
+const b = new Persona();
+const c = new Perro();
+const d = new Perro();
 
 a.setNombre("a");
 a.setEdad("1");
@@ -53,22 +53,20 @@ console.log(b.getNombre(), b.getEdad());
 console.log(c.getNombre(), c.getColor());
 console.log(d.getNombre(), d.getColor()); */
 
-const PersonasArray = [
-    { Nombre: a.getNombre(), Edad: a.getEdad() },
-    { Nombre: b.getNombre(), Edad: b.getEdad() }
+const PersonaArray = [
+    a,b
 ];
 
-const PerrosArray = [
-    { Nombre: c.getNombre(), Color: c.getColor() },
-    { Nombre: d.getNombre(), Color: d.getColor() }
+const PerroArray = [
+    c,d
 ];
 
 console.log();
 
-console.log("Personas");
-console.table(PersonasArray);
+console.log("Persona");
+console.table(PersonaArray);
 
 console.log();
 
-console.log("Perros")
-console.table(PerrosArray);
+console.log("Perro")
+console.table(PerroArray);
